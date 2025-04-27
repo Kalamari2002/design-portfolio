@@ -1,0 +1,6 @@
+:root{
+    --default-background-color: #ef7d7d;
+}
+.card{
+    background-color: var(--default-background-color);
+}
