@@ -10,12 +10,14 @@ function GameCard(props){
     return(
         <div className={styles.card}>
             <a href={link} target="_blank">
-                <img src={thumbnail} width="450" height="250" title={title} alt={thumbAlt} />
+                <img src={thumbnail} title={title} alt={thumbAlt} />
             </a>
-            <h3>
-                <a href={link} target="_blank">{title}</a>
-            </h3>
-            <p>{description}</p>
+            <header>
+                <h3>
+                    <a href={link} target="_blank">{title}</a>
+                </h3>
+                <p>{description}</p>
+            </header>
         </div>
     );
 }

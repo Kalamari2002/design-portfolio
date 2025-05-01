@@ -1,0 +1,12 @@
+:root{
+    --col-gap:0%;
+    --row-gap:10%;
+    --segment-gap:10%;
+}
+.grid{
+    display: grid;
+    column-gap: var(--col-gap);
+    row-gap: var(--row-gap);
+    grid-template-columns: auto auto;
+    margin-bottom: var(--segment-gap);
+}

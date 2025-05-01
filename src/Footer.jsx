@@ -1,6 +1,8 @@
+import styles from './footer.module.css'
+
 function Footer(){
     return(
-        <footer>
+        <footer className={styles.footer}>
             <address>
                 Gabriel Ikezaki <br/>
                 San Diego, CA, USA <br/>

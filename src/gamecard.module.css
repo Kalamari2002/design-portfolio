@@ -1,6 +1,26 @@
 :root{
     --default-background-color: #ef7d7d;
+    --card-width:470px;
+    --card-height:270px;
+    --img-width:450px;
+    --img-height:250px;
+    --padding:2%;
 }
+
 .card{
+    width: var(--card-width);
     background-color: var(--default-background-color);
+    display: grid;
+    padding-top: var(--padding);
+}
+.card a{
+    place-self: center;
+}
+.card a img{
+    width: var(--img-width);
+    height: var(--img-height);
+}
+.card header{
+    width: var(--img-width);
+    padding-left: calc((var(--card-width) - var(--img-width))/2);
 }

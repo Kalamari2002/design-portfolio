@@ -1,15 +1,12 @@
 import Header from "./Header"
 import Footer from "./Footer";
-import GameCard from "./GameCard";
+import GameGrid from "./GameGrid";
 //Our root
 function App() {
   return(
     <>
       <Header />
-      <GameCard title="Kitchen Diver" 
-      thumbnail="https://i.imgur.com/KoGjbdV.png" 
-      link="https://k4lamari.itch.io/kitchen-diver"
-      description="Blah Blah Blah"></GameCard>
+      <GameGrid/>
       <Footer />
     </>
   );

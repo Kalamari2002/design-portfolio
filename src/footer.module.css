@@ -1,0 +1,8 @@
+:root{
+    --footer-background-color: rgb(145, 128, 156);
+}
+
+.footer{
+    background-color: var(--footer-background-color);
+    -width: 100vw;
+}
