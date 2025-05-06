@@ -15,7 +15,7 @@ function App() {
       <Footer />
       <Routes>
           <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="#/about" element={<About />} />
       </Routes>
   </HashRouter>
   );
