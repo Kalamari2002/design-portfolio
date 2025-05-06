@@ -2,20 +2,14 @@
 function Header(){
     return(
         <header>
-            <h1>Gabriel Ikezaki</h1>
+            <h2>Gabriel Ikezaki</h2>
             <nav>
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <a href="/design-portfolio/">Home</a>
                     </li>
                     <li>
-                        <a href="#">DevLog</a>
-                    </li>
-                    <li>
-                        <a href="#">Games</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
+                        <a href="/design-portfolio/about">About</a>
                     </li>
                 </ul>
             </nav>
