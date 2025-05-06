@@ -1,5 +1,6 @@
 import styles from './gamecard.module.css'
 import HoverVideoPlayer from 'react-hover-video-player';
+import { HashRouter, Route, Routes, Link } from "react-router-dom";
 
 function GameCard(props){
     const title = props.title;
@@ -11,17 +12,17 @@ function GameCard(props){
     
     return(
         <div className={styles.card}>
-            <a href={link}>
+            <Link to={link}>
             <HoverVideoPlayer
                 videoSrc={videoFile}
                 pausedOverlay={
                     <img src={thumbnail} title={title} alt={thumbAlt} />
                 }
                 />
-            </a>
+            </Link>
             <header>
                 <h3>
-                    <a href={link}>{title}</a>
+                    <Link to={link}>{title}</Link>
                 </h3>
                 <p>{description}</p>
             </header>

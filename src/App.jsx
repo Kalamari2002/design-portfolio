@@ -1,23 +1,24 @@
 import Header from "./Header"
 import Footer from "./Footer";
 import GameGrid from "./GameGrid";
-import { HashRouter, Route, Routes, Link } from "react-router-dom";
+import {Route,Routes} from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
+import KitchenDiver from './KitchenDiver.jsx'
+import RunningLow from './RunningLow.jsx'
+import WeirdBossBattle from './WeirdBossBattle.jsx'
 //Our root
 function App() {
   return(
-    <HashRouter>
-
-      <Header />
-      <h1>Home</h1>
-      <GameGrid/>
-      <Footer />
+    <>
       <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="#/about" element={<About />} />
+        <Route index element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/kitchendiver" element={<KitchenDiver/>}/>
+        <Route path="/runninglow" element={<RunningLow/>}/>
+        <Route path="/weirdbossbattle" element={<WeirdBossBattle/>}/>
       </Routes>
-  </HashRouter>
+    </>
   );
 }
 

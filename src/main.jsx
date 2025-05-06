@@ -8,7 +8,7 @@ import KitchenDiver from './KitchenDiver.jsx'
 import RunningLow from './RunningLow.jsx'
 import WeirdBossBattle from './WeirdBossBattle.jsx'
 import { createBrowserRouter,RouterProvider } from "react-router-dom";
-
+import { HashRouter } from 'react-router-dom'
 const router = createBrowserRouter([
   {path:"/design-portfolio/",element:<App/>},
   {path:"/design-portfolio/about",element:<About/>},
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
   {path:"/design-portfolio/weirdbossbattle",element:<WeirdBossBattle/>}
 ]);
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App/>
-  </StrictMode>,
+  <HashRouter>
+     <App/>
+  </HashRouter>
 )
