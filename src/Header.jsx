@@ -1,3 +1,4 @@
+import { HashRouter, Route, Routes, Link } from "react-router-dom";
 
 function Header(){
     return(
@@ -6,10 +7,10 @@ function Header(){
             <nav>
                 <ul>
                     <li>
-                        <a href="/design-portfolio/">Home</a>
+                        <Link to="/home">Home</Link>
                     </li>
                     <li>
-                        <a href="/design-portfolio/about">About</a>
+                        <Link to="/about">About</Link>
                     </li>
                 </ul>
             </nav>
